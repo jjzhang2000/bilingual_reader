@@ -7,7 +7,7 @@ Planned supported ebook formats: at least PDF and ePub.
 
 ## Features
 
-### Home / Library
+### Library
 - View a list of books in the library.
 - Add books to the library.
 - Remove books from the library.
@@ -38,15 +38,10 @@ Planned supported ebook formats: at least PDF and ePub.
 - Setting library path.
 - Setting library watcher.
 
-## Getting Started
+## Next Step To Do
 
-This project is a starting point for a Flutter application.
+A startup home page of the app, with a hard coded path to the library folder, and a button to refresh the library.
 
-A few resources to get you started if this is your first Flutter project:
+## History
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+20250726 Project created.
