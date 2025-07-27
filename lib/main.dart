@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'Library/library.dart';
+import 'Library/library_page.dart';
 
 void main() {
   runApp(const BilingualReaderApp());
