@@ -1,4 +1,3 @@
-import 'package:bilingual_reader/Library/book.dart';
 import 'package:bilingual_reader/Setting/settings.dart';
 import 'package:flutter/material.dart';
 
@@ -31,13 +30,14 @@ class _LibraryPageState extends State<LibraryPage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text('$title : $bookCount Books'),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: <Widget>[
-            for (Book book in library.books) Text(book.filename),
-          ],
-        ),
+      body: ListView.builder(
+        itemCount: bookCount,
+        itemBuilder: (BuildContext context, int index) {
+          return Container(
+            height: 50,
+            child: Text('Entry ${library.books[index].title}'),
+          );
+        },
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _renewLibrary,
