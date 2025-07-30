@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'book.dart';
+import '../Book/book.dart';
 
 class Library {
   List<String> paths = [];

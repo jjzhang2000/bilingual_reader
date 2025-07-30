@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:bilingual_reader/Setting/settings.dart';
 import 'package:flutter/material.dart';
 
+import '../Book/book_page.dart';
 import 'library.dart';
 
 // LibraryPage
@@ -39,7 +40,14 @@ class _LibraryPageState extends State<LibraryPage> {
             padding: const EdgeInsets.all(5.0),
             height: 100,
             child: TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => BookPage(book: library.books[index]),
+                  ),
+                );
+              },
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
