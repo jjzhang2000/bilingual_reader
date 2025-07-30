@@ -34,6 +34,12 @@ class _BookPageState extends State<BookPage> {
               fit: BoxFit.cover,
             ),
             const SizedBox(height: 20),
+            Text(widget.book.directory, style: const TextStyle(fontSize: 24)),
+            Text(widget.book.filename, style: const TextStyle(fontSize: 24)),
+            Text(
+              widget.book.coverImageFilename,
+              style: const TextStyle(fontSize: 24),
+            ),
             Text(widget.book.title, style: const TextStyle(fontSize: 24)),
           ],
         ),
