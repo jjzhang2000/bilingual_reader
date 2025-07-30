@@ -38,7 +38,7 @@ class _LibraryPageState extends State<LibraryPage> {
         itemBuilder: (BuildContext context, int index) {
           return Container(
             padding: const EdgeInsets.all(5.0),
-            height: 100,
+            height: 180,
             child: TextButton(
               onPressed: () {
                 Navigator.push(
@@ -55,15 +55,15 @@ class _LibraryPageState extends State<LibraryPage> {
                   Image.file(
                     File(library.books[index].coverImageFilename),
                     errorBuilder: (context, error, stackTrace) {
-                      return const Icon(Icons.book, size: 50);
+                      return const Icon(Icons.book, size: 180);
                     },
-                    width: 100,
-                    fit: BoxFit.cover,
+                    width: 180,
+                    fit: BoxFit.contain,
                   ),
                   const SizedBox(width: 10),
                   Text(
                     library.books[index].title,
-                    style: const TextStyle(fontSize: 18),
+                    style: const TextStyle(fontSize: 20),
                     overflow: TextOverflow.fade,
                   ),
                 ],
